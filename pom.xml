@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.compay.hive</groupId>
@@ -13,11 +13,11 @@
   <modules>
   	<module>hive-dao</module>
   	<module>hive-model</module>
-  	<module>hive-core</module>
   	<module>hive-api</module>
   	<module>hive-common</module>
   	<module>hive-web</module>
   	<module>hive-util</module>
+    <module>hive-service</module>
   </modules>
   
   <properties>
@@ -51,7 +51,7 @@
 		<scope>test</scope>
 	</dependency>
   </dependencies>
-  <!-- 自定义依赖 （只有在子模块中显示引用该jar才会引入该依赖）-->
+  <!-- 自定义依�?（只有在子模块中显示引用该jar才会引入该依赖）-->
   <dependencyManagement>
    <dependencies>
 	<!-- spring start-->  
@@ -148,7 +148,7 @@
 		<scope>provided</scope> 
 	</dependency> 
      
-    <!-- log start 依赖 slf4j-api和log4j-api jar包 -->  
+    <!-- log start 依赖 slf4j-api和log4j-api jar�?-->  
     <dependency>
 		<groupId>log4j</groupId>
 		<artifactId>log4j</artifactId>
