@@ -16,6 +16,6 @@ public class UserServiceImpl implements IUserService{
 	}
 	@Override
 	public String test(String key) {
-		return key+"测试";
+		return key+"20882";
 	}
 }

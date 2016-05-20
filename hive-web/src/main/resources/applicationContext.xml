@@ -17,6 +17,6 @@
     <dubbo:reference id="userService"  
         interface="com.hive.provider.IUserService" />
     <!-- 载入MySql配置 文件-->
-      <context:component-scan base-package="com.hive"/>
+    <context:component-scan base-package="com.hive"/>
  	<context:property-placeholder location="classpath:log4j.properties" />        
 </beans>

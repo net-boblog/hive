@@ -16,7 +16,7 @@ public class UserController {
 	@ResponseBody
 	@RequestMapping(value="test")
 	public String test(){
-		return "sadadasda";
+		return userService.test("返回结果");
 	}
 	@ResponseBody
 	@RequestMapping(value="selectUser")
