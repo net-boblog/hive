@@ -28,6 +28,11 @@
       <artifactId>hive-dao</artifactId>
       <version>${project.version}</version>	
     </dependency>
+    <dependency>
+      <groupId>com.compay.hive</groupId>
+      <artifactId>hive-common</artifactId>
+      <version>${project.version}</version>	
+    </dependency>
     <dependency>    
         <groupId>javax.servlet</groupId>    
         <artifactId>servlet-api</artifactId>    
