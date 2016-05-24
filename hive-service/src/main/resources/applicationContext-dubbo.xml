@@ -12,7 +12,9 @@
     <dubbo:application name="dubbo_provider" />  
   
     <!-- 使用zookeeper注册中心暴露服务地址  即zookeeper的所在服务器ip地址和端口号 --> 
-    <dubbo:registry address="zookeeper://123.57.176.88:2181" />  
+    <!--  <dubbo:registry address="zookeeper://123.57.176.88:2181"/>  -->
+    <!-- 本机 伪集群 测试 -->
+    <dubbo:registry protocol="zookeeper" address="123.57.176.88:2181,123.57.176.88:2182,123.57.176.88:2183"/> 
   
     <!-- 用dubbo协议在20880端口暴露服务 -->  
     <dubbo:protocol  name="dubbo" port="20880" />  
