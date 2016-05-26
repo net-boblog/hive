@@ -1,1 +1,3 @@
+com\hive\common\AesUtil.class
+com\hive\common\SerializationUtil.class
 com\hive\common\JedisClusterFactory.class

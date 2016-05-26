@@ -11,9 +11,9 @@
     <dubbo:application name="dubbo_consumer" />  
   
     <!-- 使用zookeeper注册中心暴露服务地址 -->  
-    <dubbo:registry address="zookeeper://123.57.176.88:2181" />  
+<!--     <dubbo:registry address="zookeeper://123.57.176.88:2181" />   -->
     <!-- 本机 伪集群 测试 -->
-    <!-- <dubbo:registry protocol="zookeeper" address="123.57.176.88:2181,123.57.176.88:2182,123.57.176.88:2183"/>  -->
+    <dubbo:registry protocol="zookeeper" address="123.57.176.88:2181,123.57.176.88:2182,123.57.176.88:2183"/> 
     <!-- 生成远程服务代理，可以像使用本地bean一样使用userService -->  
     <dubbo:reference id="userService"  
         interface="com.hive.provider.IUserService" />
