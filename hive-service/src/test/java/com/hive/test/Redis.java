@@ -94,7 +94,7 @@ public class Redis extends TestBase {
 	}
 	@Test
 	public void addList(){
-		/*jedis.lpush("latest","1");
+/*		jedis.lpush("latest","1");
 		jedis.lpush("latest","2");
 		jedis.lpush("latest","4");
 		jedis.lpush("latest","3");*/

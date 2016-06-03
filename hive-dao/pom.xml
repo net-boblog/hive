@@ -25,5 +25,10 @@
       <artifactId>hive-model</artifactId>
       <version>${project.version}</version>	
     </dependency>
+	   <!-- mybatis -->  
+    <dependency>  
+        <groupId>org.mybatis</groupId>  
+        <artifactId>mybatis</artifactId>  
+    </dependency>  
   </dependencies>
 </project>

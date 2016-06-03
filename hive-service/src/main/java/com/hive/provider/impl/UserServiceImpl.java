@@ -11,8 +11,8 @@ public class UserServiceImpl implements IUserService{
 	@Autowired
 	private UserMapper userMapper;
 	@Override
-	public User selectUserByPrimaryKey(int userId) {
-		return userMapper.selectUserByPrimaryKey(userId);
+	public User selectUserByPrimaryKey(Integer userId,Integer userState) {
+		return userMapper.selectUserByPrimaryKey(userId,userState);
 	}
 	@Override
 	public String test(String key) {

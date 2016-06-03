@@ -21,7 +21,7 @@ public class UserController {
 	@ResponseBody
 	@RequestMapping(value="selectUser")
 	public User selectUserParmaryKey(){
-		User user=userService.selectUserByPrimaryKey(1);
+		User user=userService.selectUserByPrimaryKey(1, 0);
 		System.out.println("Name:"+user.getName());
 		return user;
 	}

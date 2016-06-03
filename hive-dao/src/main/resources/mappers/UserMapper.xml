@@ -3,5 +3,8 @@
 <mapper namespace="com.hive.dao.mapper.UserMapper" >
   <select id="selectUserByPrimaryKey" resultType="com.hive.model.User" parameterType="java.lang.Integer">
   	SELECT USER_ID as userId,NAME FROM T_HIVE_USER WHERE USER_ID=#{userId,jdbcType=INTEGER}
+  	<if test="userState !=null and userState !=0">
+  		AND USER_STATE=#{userState,jdbcType=INTEGER}
+  	</if>
   </select>
 </mapper>

@@ -1,5 +1,7 @@
 package com.hive.dao.mapper;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.hive.model.User;
 
 
@@ -9,5 +11,5 @@ public interface UserMapper{
 	 * @param userId
 	 * @return
 	 */
-	User selectUserByPrimaryKey(int userId);
+	User selectUserByPrimaryKey(@Param("userId") Integer userId,@Param("userState") Integer userState);
 }
